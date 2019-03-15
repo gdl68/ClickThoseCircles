@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="master.css">
+  <title>Click Those Circles</title>
+</head>
+<body>
+  <div class = "gameArea">
+    <div class="gameLogo">
+      <img src="gameLogo.png" class="gameLogo"></img>
+    </div>
+    <div class="gameMenu">
+      <h1> ctc!stats </h1>
+      <ul class="otherStats">
+        <li id="name">Player name:</li>
+        <li id="age">Player age:</li>
+        <li>Circle size:</li>
+        <li>Circle color: <input type="text" id="circleColor" value="#FF0000"></li>
+        <li>Time:<span name="globalTime"></span></li>
+        <li>Playtime:<span name="playTime"></span></li>
+      </ul>
+    </div>
+    <div class="gameScore">
+      <h1>ctc!score</h1>
+      <p class="score">Score: <span id="score">0</span></p>
+      <p class="combo">Combo: <span id="combo">0</span></p>
+    </div>
+
+
+    <!-- GAME STARTS -->
+    <div id="gameWindow">
+      <div id="circle">
+
+      </div>
+    </div>
+  </div>
+
+
+<script defer src="getNameScript.js"></script>
+<script defer src="getAgeScript.js"></script>
+<script defer src="gameScript.js"></script>
+
+
+</body>
+</html>

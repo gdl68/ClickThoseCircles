@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+div.gameArea {
+  background: linear-gradient(to top left, black 1%, grey, lightgrey, white);
+  border: solid 2px black;
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+
+div.gameMenu {
+  position: absolute;
+  border-left: solid 2px black;
+  width: 25%;
+  height: 80%;
+  background: linear-gradient(to top, green,yellow);
+  right:0;
+  bottom:0;
+}
+
+div.gameScore {
+  position: absolute;
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+  width: 25%;
+  height: 20%;
+  right:0;
+  background-color: yellow;
+
+}
+
+div.gameLogo {
+  position: absolute;
+  border-right: solid 2px black;
+  width: 15%;
+  height: 100%;
+  background: radial-gradient(at top, lime, green);
+}
+
+div#gameWindow {
+  position: absolute;
+  width:60%;
+  height:100%;
+  left: 15%;
+  padding: 30px;
+  background-color: rgba(0,255,50,0.5);
+
+}
+
+div#circle {
+  position:absolute;
+
+/* position */
+  left: 3px;
+  bottom: 3px;
+/* size */
+  width: 50px;
+  height: 50px;
+
+/* design*/
+  border: solid 2px #990000;
+  border-radius: 100%;
+  background-color: #ff7a66;
+
+}
+
+img.gameLogo {
+  position: absolute;
+  bottom: 0px;
+}
+input {
+  display: inline-block;
+  width:60%;
+}
+
+
+ul.otherStats,p {
+  padding:0px 0px 0px 30px;
+}
+
+h1 {
+  font-size: 200%;
+  padding: 10px;
+}
+
+p.score {
+  font-size: 150%;
+}
