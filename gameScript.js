@@ -12,6 +12,24 @@ circle.onclick = function () {
     circle.style.left = Math.random() * 80 + 10 + "%";
 }
 
+var currentTime = new Date();
+var currentTimeElem = document.getElementById("currentTime");
+
+setInterval(function () {
+    currentTimeElem.innerHTML = "Time: " + currentTime.getHours() + ":"
+        + currentTime.getMinutes() + ":" + currentTime.getSeconds();
+    currentTime.setSeconds(currentTime.getSeconds() + 1);
+}, 1000);
+
+
+var playTime = new Date(0, 0, 0, 0, 0, 0);
+var playTimeElem = document.getElementById("playTime");
+
+setInterval(function () {
+    playTimeElem.innerHTML = "Playtime: " + playTime.getHours() + ":" +
+        playTime.getMinutes() + ":" + playTime.getSeconds();
+    playTime.setSeconds(playTime.getSeconds() + 1);
+}, 1000);
 
 
 
