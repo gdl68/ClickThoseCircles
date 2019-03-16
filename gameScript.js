@@ -10,7 +10,7 @@ circle.onclick = function () {
     score.innerHTML = parseInt(score.innerHTML) + CLICK_VALUE * (combo.innerHTML / 4);
     circle.style.bottom = Math.random() * 80 + 10 + "%";
     circle.style.left = Math.random() * 80 + 10 + "%";
-}
+};
 
 var currentTime = new Date();
 var currentTimeElem = document.getElementById("currentTime");
@@ -31,6 +31,21 @@ setInterval(function () {
     playTime.setSeconds(playTime.getSeconds() + 1);
 }, 1000);
 
+
+
+var circleSizeInput = document.getElementById("circleSize");
+
+circleSizeInput.onblur = function () {
+    circle.style.width = circleSizeInput.value + "px";
+    circle.style.height = circleSizeInput.value + "px";
+};
+
+
+var circleColorInput = document.getElementById("circleColor");
+
+circleColorInput.onblur = function () {
+    circle.style.backgroundColor = circleColorInput.value;
+}
 
 
 
